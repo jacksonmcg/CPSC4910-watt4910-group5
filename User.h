@@ -6,7 +6,8 @@ using namespace std;
 
 class User {
 		string username, password, email;
-		int phone, ID;
+		long phone;
+		int ID;
 	public:
 		User();
 		~User(); 
@@ -14,6 +15,12 @@ class User {
 		string getUsername();
 		string getPassword();
 		string getEmail();
-		int getPhone();
+		long getPhone();
 		int getID();
+
+		void setUsername(string i);
+		void setPassword(string i);
+		void setEmail(string i);
+		void setPhone(string i);
+		void setID(string i);
 };

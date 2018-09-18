@@ -1,5 +1,6 @@
 #include <string.h>
 #include <iostream>
+#include <fstream>
 #include <cstdlib>
 
 using namespace std;
@@ -15,4 +16,9 @@ class Driver: public User {
 		void registerDriver();
 		int getPoints();
 		string getSponsor();
+		void saveDriver();
+		int changePoints();
+
+		void setSponsor(string i);
+		void setPoints(string i);
 };
